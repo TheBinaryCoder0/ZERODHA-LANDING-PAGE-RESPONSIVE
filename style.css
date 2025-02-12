@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    padding: 1vw 21vw;
+}
+
+.navbar{
+    width: 100%;
+    height: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line{
+    display: none;
+}
+
+.navbar img{
+    width: 12%;
+    height: 60%;
+}
+
+.menu{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vw;
+}
+
+.nav-buttons{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5%;
+    font-size: 0.8vw;
+    font-weight: 400;
+    background-color: transparent;
+    color: rgb(92, 89, 89);
+}
+
+.nav-buttons:hover{
+    cursor: pointer;
+    color: #387ED1;
+}
+
+.nav-icon{
+    width: 60%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5%;
+    font-size: 1.2vw;
+    font-weight: 200;
+    background-color: transparent;
+}
+
+.nav-icon:hover{
+    cursor: pointer;
+    color: #387ED1;
+}
+
+.center-image{
+    padding: 0vw 4vw;
+    margin-top: 7vw;
+    width: 100%;
+    height: 45%;
+}
+
+.center-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    margin-top: 2vw;
+    padding: 1vw 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+}
+
+.text h1{
+    color: rgb(62, 61, 61);
+    font-size: 2.2vw;
+    font-weight: 400;
+}
+
+.text h2{
+    color: rgb(62, 61, 61);
+    margin-top: 1vw;
+    font-size: 1vw;
+    font-weight: 300;
+    text-wrap: nowrap;
+}
+
+.signup{
+    margin-left: 23vw;
+    width: 18%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-button{  
+    color: white;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 2%;
+    width: 100%;
+    height: 100%;
+    background-color:#387ED1;;
+}
+
+.signup-button:hover{
+    cursor: pointer;
+    background-color: rgb(29, 27, 27);
+}
+
+
+@media screen and (max-width:830px) {
+
+    #main{
+        padding: 5vw 5vw;
+        position: relative;
+    }
+
+    .line{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0.1%;
+        background-color: rgba(94, 93, 93, 0.23);
+        overflow-x: hidden;
+        margin-top: 7vw;
+        display: flex;
+        box-shadow: 10px 14px 110px rgba(128, 128, 128, 0.5);
+    }
+
+    .navbar img{
+        width: 30%;
+        height: 80%;
+    }
+
+    .menu{
+        margin-right: 2vw;
+        justify-content:right;
+    }
+
+    .nav-buttons{
+        display: none;
+    }
+
+    .nav-icon{
+        width: 20%;
+        height: 100%;
+        font-size: 6vw;
+        font-weight: 300;
+        display: block;
+    }
+
+    .center-image img{
+        margin-top: 15vw;
+        width: 100%;
+        height: 50%;
+    }
+
+    .text{
+        flex-direction: column;
+        width: 100%;
+        height: 25%;
+    }
+
+    .text span{
+        display: flex;
+        justify-content: center;
+    }
+
+    .text h1{
+        font-size: 10vw;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+
+    .text h2{
+        line-height: 190%;
+        font-size: 5.5vw;
+        font-weight: 400;
+        margin-top: 4vw;
+    }
+
+    .span-1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .span-2{
+        display: flex;
+        justify-content: center;
+        white-space: nowrap;
+    }
+
+    .span-3{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .signup{
+        margin-left: 18vw;
+        margin-top: 20vw;
+        width: 60%;
+        height: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signup-button{
+        width: 100%;
+        height: 100%;
+        font-weight: 400;
+        font-size: 5.5vw;
+        border: none;
+        border-radius: 2%;
+        outline: none;
+        background-color: #387ED1;
+        color: white;
+    }
+    
+}
